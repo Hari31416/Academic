@@ -1,0 +1,4 @@
+Eigenvalues.ipynb
+name.txt
+sympy.ipynb
+temp.ipynb
