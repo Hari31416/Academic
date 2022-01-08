@@ -1,4 +1,3 @@
-# PYL800
-Repository for course PYL800  Numerical and Computational Methods in Research
-
+# Academic 
+Repository for notes and codes related to academics
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Hari31416/PYL800/HEAD)
