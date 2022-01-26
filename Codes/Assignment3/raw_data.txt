@@ -1,0 +1,159 @@
+CONF1
+Initial
+atom    -1      0       0       Co
+atom    1       0       0       Co
+atom    0       2       0       Zr
+atom    0       4       0       Co
+Not Converged
+
+
+CONF2
+atom    -1      0       0       Co
+atom    1       0       0       Co
+atom    0       2       0       Co
+atom    0       4       0       Zr
+Converged
+Final
+atom        -1.02195984       -0.04171919       -0.00000000  Co
+atom         1.02195984       -0.04171915       -0.00000000  Co
+atom        -0.00000003        2.07303559        0.00000002  Co
+atom         0.00000003        4.01040275       -0.00000001  Zr
+Energy
+-212991.530759
+
+
+CONF3
+Initial
+atom    -1      0       0       Co
+atom    1       0       0       Zr
+atom    0       2       0       Co
+atom    0       4       0       Co
+Converged
+Final
+atom        -0.74415541       -0.35114249        0.00000005  Co
+atom         0.97367750        0.82228537       -0.00000003  Zr
+atom        -0.89607783        2.03889434       -0.00000006  Co
+atom         0.66655574        3.48996277        0.00000004  Co
+Energy
+-212992.883825
+
+
+CONF4
+Initial
+atom	0	0	0	Zr
+atom	2	0	0	Co
+atom	0	2	0	Co
+atom	0	0	2	Co
+Converged
+Final
+atom        -0.28221476       -0.28221486       -0.28221486  Zr
+atom         1.89849074        0.19186199        0.19186198  Co
+atom         0.19186202        1.89849080        0.19186207  Co
+atom         0.19186200        0.19186207        1.89849081  Co
+Energy
+-212992.912984
+
+
+CONF5
+Initial
+atom	0	0	0	Co
+atom	0	0	2	Co
+atom	0	0	4	Zr
+atom	0	0	6	Co
+Converged
+Final
+atom         0.00000001       -0.00000002       -0.16985336  Co
+atom        -0.00000002        0.00000002        1.95213864  Co
+atom         0.00000000        0.00000001        4.12362956  Zr
+atom         0.00000001       -0.00000001        6.09408515  Co
+Energy
+-212990.966254
+
+
+CONF6
+Initial
+atom	0	2	0	Zr
+atom	2	0	0	Co
+atom	0	4	0	Co
+atom	-2	0	0	Co
+Not Converged
+
+
+CONF7
+Initial
+atom	-1	0	0	Co
+atom	1	0	0	Co
+atom	0	1	0	Co
+atom	0	3	0	Zr
+Not Converged
+
+CONF8
+Initial
+atom	0	0	0	Co
+atom	0	0	2	Co
+atom	0	0	4	Co
+atom	0	0	6	Zr
+Converged
+Final
+atom         0.00000000        0.00000001       -0.09408521  Co
+atom         0.00000001       -0.00000003        1.87637001  Zr
+atom        -0.00000003        0.00000002        4.04786115  Co
+atom         0.00000002       -0.00000000        6.16985405  Co
+Energy
+-212990.966254
+
+CONF9
+Initial
+atom	0	0	0	Co
+atom	0	0	2	Co
+atom	0	0	4	Co
+atom	0	0	6	Zr
+Not Converged
+
+
+CONF10
+Initial
+atom	0	0	0	Co
+atom	1	1	0	Zr
+atom	0	1	0	Co
+atom	1	0	0	Co
+Converged
+Final
+atom        -0.45698498       -0.45698490        0.00000000  Co
+atom         1.47449397        1.47449396        0.00000000  Zr
+atom        -0.71922188        1.70171278       -0.00000000  Co
+atom         1.70171289       -0.71922183       -0.00000000  Co
+Energy 
+-212993.138496
+
+
+CONF11
+Initial
+atom	0	0	0	Co
+atom	1	0	0	Zr
+atom	0	1	0	Co
+atom	0	0	1	Co
+Not Converged
+
+
+CONF12
+atom	0	0	0	Co
+atom	1.2	0	0	Zr
+atom	0	1.2	0	Co
+atom	0	0	1.2	Co
+Not Converged
+
+
+CONF13
+atom	0	0	0	Co
+atom	2	0	0	Zr
+atom	0	2	0	Co
+atom	0	0	2	Co
+Not Converged
+
+
+CONF14
+atom	0	0	0	Zr
+atom	-1	-1	0	Co
+atom	0	2	0	Co
+atom	1	-1	0	Co
