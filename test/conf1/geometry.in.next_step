@@ -1,0 +1,24 @@
+# 
+# This is the geometry file that corresponds to the current relaxation step.
+# If you do not want this file to be written, set the "write_restart_geometry" flag to .false.
+# 
+atom      -1.04450536     -0.09376389     -0.00000000 Co
+atom       1.04450517     -0.09376410     -0.00000000 Co
+atom       0.00000048      2.07288559      0.00000000 Zr
+atom      -0.00000029      4.11464241     -0.00000000 Co
+# 
+# What follows is the current estimated Hessian matrix constructed by the BFGS algorithm.
+# This is NOT the true Hessian matrix of the system.
+# If you do not want this information here, switch it off using the "hessian_to_restart_geometry" keyword.
+# 
+trust_radius             0.2000000030
+hessian_block                1       1          24.017491           3.004656           0.000000           3.004656           8.131352           0.000000           0.000000           0.000000           2.003173
+hessian_block                1       2         -20.412374           0.074937           0.000000          -0.074937          -0.093178           0.000000           0.000000           0.000000           0.003173
+hessian_block                1       3          -1.670437          -3.046920           0.000000          -2.929708          -6.038130           0.000000           0.000000           0.000000          -0.012693
+hessian_block                1       4           0.065321          -0.032673           0.000000          -0.000011          -0.000043           0.000000           0.000000           0.000000           0.006347
+hessian_block                2       2          24.017491          -3.004656           0.000000          -3.004656           8.131352           0.000000           0.000000           0.000000           2.003173
+hessian_block                2       3          -1.670437           3.046920           0.000000           2.929708          -6.038130           0.000000           0.000000           0.000000          -0.012693
+hessian_block                2       4           0.065321           0.032673           0.000000           0.000011          -0.000043           0.000000           0.000000           0.000000           0.006347
+hessian_block                3       3           5.634830          -0.000000           0.000000          -0.000000          34.469407           0.000000           0.000000           0.000000           2.050774
+hessian_block                3       4          -0.293955           0.000000           0.000000           0.000000         -20.393148           0.000000           0.000000           0.000000          -0.025387
+hessian_block                4       4           2.163314           0.000000           0.000000           0.000000          22.393235           0.000000           0.000000           0.000000           2.012693

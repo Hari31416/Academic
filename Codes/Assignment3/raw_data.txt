@@ -145,15 +145,23 @@ Not Converged
 
 
 CONF13
+Initial
 atom	0	0	0	Co
 atom	2	0	0	Zr
 atom	0	2	0	Co
 atom	0	0	2	Co
 Not Converged
 
-
-CONF14
+CONG14
+Iniatial
+atom	0	0	2	Co
 atom	0	0	0	Zr
-atom	-1	-1	0	Co
+atom	0	2	2	Co
 atom	0	2	0	Co
-atom	1	-1	0	Co
+Converged
+atom	0.00000001	-0.20170932	2.21922135	Co
+atom	-0.00000001	0.02548169	0.02548171	Zr
+atom	-0.00000001	1.95700626	1.95700627	Co
+atom	0.00000001	2.21922138	-0.20170932	Co
+Energy
+-212993.138417               
