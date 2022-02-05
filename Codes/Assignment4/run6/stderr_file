@@ -1,0 +1,36 @@
+=>> PBS: job killed: walltime 373 exceeded limit 360
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.052014.scala  000000000137D301  Unknown               Unknown  Unknown
+aims.052014.scala  000000000137BA57  Unknown               Unknown  Unknown
+aims.052014.scala  000000000131F174  Unknown               Unknown  Unknown
+aims.052014.scala  000000000131EF86  Unknown               Unknown  Unknown
+aims.052014.scala  00000000012CA77F  Unknown               Unknown  Unknown
+aims.052014.scala  00000000012D0A0B  Unknown               Unknown  Unknown
+libpthread.so.0    00002B3DA57585D0  Unknown               Unknown  Unknown
+aims.052014.scala  00000000005EB6A6  Unknown               Unknown  Unknown
+aims.052014.scala  000000000063B368  Unknown               Unknown  Unknown
+aims.052014.scala  00000000008656C5  Unknown               Unknown  Unknown
+aims.052014.scala  0000000000407EF0  Unknown               Unknown  Unknown
+aims.052014.scala  00000000004078B4  Unknown               Unknown  Unknown
+aims.052014.scala  00000000004076FE  Unknown               Unknown  Unknown
+libc.so.6          00002B3DA6A8E3D5  Unknown               Unknown  Unknown
+aims.052014.scala  0000000000407609  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.052014.scala  000000000137D301  Unknown               Unknown  Unknown
+aims.052014.scala  000000000137BA57  Unknown               Unknown  Unknown
+aims.052014.scala  000000000131F174  Unknown               Unknown  Unknown
+aims.052014.scala  000000000131EF86  Unknown               Unknown  Unknown
+aims.052014.scala  00000000012CA77F  Unknown               Unknown  Unknown
+aims.052014.scala  00000000012D0A0B  Unknown               Unknown  Unknown
+libpthread.so.0    00002AF39306D5D0  Unknown               Unknown  Unknown
+aims.052014.scala  0000000000B4C34A  Unknown               Unknown  Unknown
+aims.052014.scala  00000000004F7905  Unknown               Unknown  Unknown
+aims.052014.scala  00000000006371C7  Unknown               Unknown  Unknown
+aims.052014.scala  00000000008656C5  Unknown               Unknown  Unknown
+aims.052014.scala  0000000000407EF0  Unknown               Unknown  Unknown
+aims.052014.scala  00000000004078B4  Unknown               Unknown  Unknown
+aims.052014.scala  00000000004076FE  Unknown               Unknown  Unknown
+libc.so.6          00002AF3943A33D5  Unknown               Unknown  Unknown
+aims.052014.scala  0000000000407609  Unknown               Unknown  Unknown
