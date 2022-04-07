@@ -1,0 +1,131 @@
+cd
+ls
+pwd
+mkdir bin
+---------------------------------------------------------------------------------------------
+cp -r /from_directory_path/ /to_directory_path/
+	cp -r /scratch/physics/faculty/saswata/PYL739-files ~/bin
+
+	aims.052014.scalapack.mpi.x
+	extract_final_xyz.sh
+	control_head
+	extract_energy.new.sh
+	01_H_default
+
+vi control.in
+cat  control_head >> control.in	
+cat Z_Atom_default >> control.in
+---------------------------------------------------------------------------------------------
+# H2 - Energy vs Distance
+ 
+	Job Submission
+	Extract Energy - /path/extract_energy.new.sh /path/output
+ ---------------------------------------------------------------------------------------------
+# Co_Zn Assignment
+
+	vi gemetry.in    ( create initial structure )
+ 	control.in         --------------> Optimization of Structure
+		# For relaxation:
+		  relax_geometry trm 1E-3
+		  sc_accuracy_forces 1E-4
+			
+	cat Z_Atom_default >> control.in
+	
+	After running job
+		geometry.in.next_step
+		Extract Energy - /path/extract_energy.new.sh /path/output
+		logout hcp
+		scp phs217221@iitd.hpc.ac.in:hpc_output_path/ /pc_path/file
+				
+		jmol geometry.in
+---------------------------------------------------------------------------------------------		
+#  Density of State 
+	vi gemetry.in   ( stable structure )
+ 	control.in 
+		  ####### keywords for DOS########
+		  k_grid  8 8 8
+		  ##########################
+		  output dos -20 20 20000 0.2                  -------> graph ( range , step size , # of step )
+		  output atom_proj_dos -20 20 20000 0.1   -------> histogram (bin size)
+		  dos_kgrid_factors 2 2 2
+		  
+		 Band Gap: 
+			output 
+				HUMO-LUMO : band_gap
+		
+		xmgrace KS_DOS_total.dat
+---------------------------------------------------------------------------------------------
+# Band Structure
+	files needed aims_sub.sh ( or aims.sh) , control.in, geometry.in, aimsplot.py
+	
+	control.in :
+		  xc           pbesol
+  		  relativistic atomic_zora scalar
+		  k_grid                     6 6 6
+		  sc_accuracy_rho            1E-6
+		  sc_accuracy_eev            1E-4
+		  sc_accuracy_etot           1E-6
+		  sc_accuracy_forces         1E-4
+		  sc_iter_limit         100
+		  occupation_type gaussian  0.01
+		  mixer           pulay
+		  n_max_pulay               10
+		  charge_mix_param          0.4
+		#   relax_geometry        trm 1E-4
+		 output band  0.5  0.5  0.5  0.25   0.25   0.25   100   L Lambda
+		 output band  0.25     0.25     0.25     0  0  0  100   Lambda Gamma
+		 output band  0     0     0     0.00  0.25  0.25  100   Gamma  Delta
+		 output band  0.00  0.25  0.25  0     0.5   0.5   100   Delta  X
+		
+	geometry.in : 
+		lattice_vector      0.00000000      2.715000      2.715000
+		lattice_vector      2.715000      0.00000000      2.715000
+		lattice_vector      2.715000      2.715000      0.00000000
+		atom      -0.00125022     -0.00125011     -0.00125012 Si
+		atom       1.35625022      1.35625011      1.35625012 Si
+	
+	 Job Submission - 
+		qsub -qlow aims_sub.sh (or aims.sh file)
+		qstat -u phs217221
+		tail output
+		
+	After job run successfully, we get these files: 
+		band1001.out , band1002.out , band1003.out , band1004.out , output
+	
+	Plot : 
+		python2 aimsplot.py
+
+	Band Gap :
+		vi output 
+			Highest Occupied State (VBM) at  ______________
+			Lowest unoccupied State (CBM) at  ______________
+			ESTIMATED overall HOMO-LUMO gap: _____________	
+
+---------------------------------------------------------------------------------------------
+
+Job Submission - 
+	qsub -qlow aims_sub.sh
+	qstat -u phs217221
+	tail output
+	
+geometry.in 
+	atom	0	0	0	H
+	atom	0	0	1	H
+	
+control.in
+  xc               pbe
+  spin             collinear
+  default_initial_moment hund
+  relativistic     atomic_zora scalar 1e-9
+  occupation_type  gaussian 0.001
+  charge        0
+  vdw_correction_hirshfeld
+  KS_method        scalapack_fast
+  mixer            pulay
+  charge_mix_param  0.4
+  spin_mix_param    0.6
+  sc_accuracy_rho  1E-4
+  sc_accuracy_eev  1E-5
+  sc_accuracy_etot 1E-5
+  sc_iter_limit    100
+  empty_states     5
